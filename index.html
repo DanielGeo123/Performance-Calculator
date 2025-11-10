@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Performance Calculator</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body class="w3-light-grey">
+
+<!-- NAVIGATION BAR -->
+<div class="w3-bar w3-black w3-large">
+  <a href="index.html" class="w3-bar-item w3-button w3-hide-small">Home</a>
+  <a href="gallery.html" class="w3-bar-item w3-button w3-hide-small">Gallery</a>
+  <a href="about.html" class="w3-bar-item w3-button w3-hide-small">About</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+
+  <!-- Hamburger Icon -->
+  <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" 
+     onclick="toggleMenu()">☰</a>
+</div>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+  <a href="about.html" class="w3-bar-item w3-button">About</a>
+  <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+</div>
+
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("mobileMenu");
+  if (menu.classList.contains("w3-hide")) {
+    menu.classList.remove("w3-hide");
+  } else {
+    menu.classList.add("w3-hide");
+  }
+}
+</script>
+
+<header class="w3-container w3-center w3-padding-64">
+  <img src="images/logo.png" style="width:140px">
+  <h1>Performance Calculator</h1>
+  <p>Compare mods • Estimate gains • Optimize your build</p>
+</header>
+
+<div class="w3-content w3-padding" style="max-width:1200px">
+
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <div class="w3-card w3-padding w3-white">
+        <h3>Performance Per Dollar</h3>
+        <p>Lorem ipsum filler text…</p>
+      </div>
+    </div>
+
+    <div class="w3-col m6">
+      <div class="w3-card w3-padding w3-white">
+        <h3>Vehicle Mod Database</h3>
+        <p>Lorem ipsum filler text…</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="w3-center w3-padding-32">© 2025 Performance Calculator</footer>
+
+</body>
+</html>
